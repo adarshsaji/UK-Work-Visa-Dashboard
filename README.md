@@ -1,1 +1,1 @@
-streamlit run visa_dashboard.py
+to run: streamlit run visa_dashboard.py
