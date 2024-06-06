@@ -12,10 +12,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Enable dark theme for Altair plots
-import altair as alt
-alt.themes.enable("dark")
-
 def main():
     # Fetch data
     df, last_updated_date = fetch_data()
