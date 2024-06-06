@@ -1,6 +1,6 @@
 ## UK Work Visa Dashboard
 
-This is the README file for the UK Work Visa Dashboard Streamlit application. This application is deployed and accessible at: [https://uk-work-visa-dashboard.streamlit.app](https://uk-work-visa-dashboard.streamlit.app)
+This Srreamlit application is deployed and accessible at: [https://uk-work-visa-dashboard.streamlit.app](https://uk-work-visa-dashboard.streamlit.app)
 
 **Description**
 
@@ -14,7 +14,7 @@ The application fetches data from daily published CSVs hosted on the UK Governme
 
 **Code Structure**
 
-The code is divided into several sections:
+The code is divided into following sections:
 
 1. **Page configuration:** Sets the page title, icon, layout, and theme.
 2. **Function definitions:**
@@ -34,7 +34,7 @@ The code is divided into several sections:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/uk_work_visa_dashboard.git
+    git clone https://github.com/adarshsaji/UK-Work-Visa-Dashboard.git
     ```
 2. Ensure you have Python 3 installed and install the required libraries using:
     ```sh
