@@ -18,7 +18,8 @@ The code is divided into several sections:
 
 1. **Page configuration:** Sets the page title, icon, layout, and theme.
 2. **Function definitions:**
-    - `clean_strings`: cleans text data by removing leading symbols, brackets, commas, and extra spaces.
+    - `clean_strings`: Cleans text data by removing leading symbols, brackets, commas, and extra spaces.
+    - `fetch_data`: Iterates over the past 15 days to find the most recent data file and returns the cleaned DataFrame and last updated date.
 3. **Data retrieval:**
     - Iterates over the past 15 days to find the most recent data file.
     - Reads the CSV data from the URL and cleans the column values.
@@ -31,10 +32,18 @@ The code is divided into several sections:
 
 **Running the application**
 
-1. Clone the repository 
-2. Ensure you have Python 3 and  install the required libraries using `pip install -r requirements.txt`
-3. Run the application from your terminal using `visa_dashboard.py`.
-
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/uk_work_visa_dashboard.git
+    ```
+2. Ensure you have Python 3 installed and install the required libraries using:
+    ```sh
+    pip install -r requirements.txt
+    ```
+3. Run the application from your terminal using:
+    ```sh
+    streamlit run src/app.py
+    ```
 
 **Note:**
 
