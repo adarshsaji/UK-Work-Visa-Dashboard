@@ -65,10 +65,13 @@ st.write(f"last updated: {(datetime.now() - timedelta(days=i)).strftime('%d-%m-%
 st.sidebar.header('Search Organisation')
 search_term = st.sidebar.text_input('Enter organisation name to search')
 
+# Apply filters
+filtered_data = df.copy()
+
 if search_term:
     st.header('Search Results')
-    search_results = df[df['Organisation Name'].str.contains(search_term, case=False, na=False)]
-    st.dataframe(search_results,hide_index=True, column_order=('Organisation Name','Town/City','Route','Type & Rating'))
+    filtered_data = filtered_data[filtered_data['Organisation Name'].str.contains(search_term, case=False, na=False)]
+    #st.dataframe(filtered_data,hide_index=True, column_order=('Organisation Name','Town/City','Route','Type & Rating'))
 
 
 # Sidebar filters
@@ -77,8 +80,7 @@ selected_city = st.sidebar.multiselect('Select Town/City', df['Town/City'].uniqu
 selected_type = st.sidebar.multiselect('Select Type', df['Type & Rating'].unique())
 selected_visa_route = st.sidebar.multiselect('Select Visa Route', df['Route'].unique())
 
-# Apply filters
-filtered_data = df.copy()
+
 
 if selected_city:
     filtered_data = filtered_data[filtered_data['Town/City'].isin(selected_city)]
