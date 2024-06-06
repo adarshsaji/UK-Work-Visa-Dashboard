@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime, timedelta
 import re
-from data_utils import clean_strings, fetch_data
+from data_utils import fetch_data
 
 # Set page configuration
 st.set_page_config(
