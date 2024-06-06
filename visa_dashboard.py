@@ -71,15 +71,12 @@ filtered_data = df.copy()
 if search_term:
     st.header('Search Results')
     filtered_data = filtered_data[filtered_data['Organisation Name'].str.contains(search_term, case=False, na=False)]
-    #st.dataframe(filtered_data,hide_index=True, column_order=('Organisation Name','Town/City','Route','Type & Rating'))
-
 
 # Sidebar filters
 st.sidebar.header('Filter Options')
 selected_city = st.sidebar.multiselect('Select Town/City', df['Town/City'].unique())
 selected_type = st.sidebar.multiselect('Select Type', df['Type & Rating'].unique())
 selected_visa_route = st.sidebar.multiselect('Select Visa Route', df['Route'].unique())
-
 
 
 if selected_city:
