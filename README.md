@@ -1,6 +1,6 @@
 ## UK Work Visa Dashboard
 
-This Srreamlit application is deployed and accessible at: [https://uk-work-visa-dashboard.streamlit.app](https://uk-work-visa-dashboard.streamlit.app)
+This Streamlit application is deployed and accessible at: [https://uk-work-visa-dashboard.streamlit.app](https://uk-work-visa-dashboard.streamlit.app)
 
 **Description**
 
